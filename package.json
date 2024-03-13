@@ -1,0 +1,28 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "Andesite - Core allows you to create a new microservice with ease. It provides a set of tools to help you build a new microservice.",
+  "main": "Build/App.js",
+  "scripts": {
+    "dev::build": "ts-node esbuild.config.ts",
+    "dev::start": "node Build/App.js",
+    "dev": "npm run dev::build && concurrently -c \"bgYellow.bold,bgBlue.bold\" \"npm:dev::watch*\"",
+    "dev::watch::build": "ts-node esbuild.config.ts watch",
+    "dev::watch::start": "cross-env NODE_ENV=development node --watch Build/App.js",
+    "prod::build": "tsc && ts-node esbuild.config.ts prod-build",
+    "prod::start": "node Build/App.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node21": "^21.0.1",
+    "@types/node": "^20.11.26",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.20.1",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2"
+  }
+}
