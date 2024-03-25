@@ -169,6 +169,7 @@
         "@typescript-eslint/unbound-method": "error", // https://typescript-eslint.io/rules/unbound-method
         "@typescript-eslint/unified-signatures": "error", // https://typescript-eslint.io/rules/unified-signatures
         "require-unicode-regexp": "off",
+        "max-lines": "off",
         "no-undefined": "off",
         "no-continue": "off",
         "no-underscore-dangle": "off",
