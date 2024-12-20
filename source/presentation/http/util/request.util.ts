@@ -45,7 +45,7 @@ export function prepareSearchModel<T>(data: Partial<Record<string, unknown>> | P
  *
  * @returns The query and pagination. ({@link PaginationQueryOptions})
  */
-export function extractQueryAndPagination(req: FastifyRequest): { query: Record<string, unknown>, pagination: PaginationQueryOptions } {
+export function extractQueryAndPagination(req: FastifyRequest): { query: Record<string, unknown>; pagination: PaginationQueryOptions; } {
     const pagination = filterByKeyInclusion(req.query as PaginationQueryOptions, ['limit', 'offset'], true);
     const query = filterByKeyExclusion(req.query as Record<string, unknown>, ['limit', 'offset'], true);
     return { query, pagination };

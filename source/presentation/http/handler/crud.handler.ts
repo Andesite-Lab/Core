@@ -1,4 +1,6 @@
-import type { FastifyReply, FastifyRequest } from '#/common/lib/required/fastify/fastify.lib.ts';
+import type { FastifyReply } from 'fastify/types/reply.js';
+import type { FastifyRequest } from 'fastify/types/request.js';
+
 import type { SearchModel } from '#/common/type/data/infrastructure/repository/searchModel.data.ts';
 import { crud } from '#/domain/usecase/crud.usecase.ts';
 import { extractQueryAndPagination, prepareSearchModel, sendResponse } from '#/presentation/http/util/request.util.ts';

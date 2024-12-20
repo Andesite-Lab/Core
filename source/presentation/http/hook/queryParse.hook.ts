@@ -1,4 +1,8 @@
-import type { FastifyInstance, FastifyReply, FastifyRequest, HookHandlerDoneFunction } from '#/common/lib/required/fastify/fastify.lib.ts';
+import type { HookHandlerDoneFunction } from 'fastify/types/hooks.js';
+import type { FastifyInstance } from 'fastify/types/instance.js';
+import type { FastifyReply } from 'fastify/types/reply.js';
+import type { FastifyRequest } from 'fastify/types/request.js';
+
 import type { Hook } from '#/common/type/data/presentation/http/hook.data.ts';
 
 /**

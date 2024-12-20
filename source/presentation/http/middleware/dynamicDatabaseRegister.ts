@@ -1,6 +1,7 @@
+import type { FastifyRequest } from 'fastify/types/request.js';
+
 import { CoreError } from '#/common/error/core.error.ts';
 import { ErrorKeys } from '#/common/error/keys.error.ts';
-import type { FastifyRequest } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { DynamicDatabaseOptions } from '#/common/type/data/infrastructure/dynamicDatabaseOptions.data.ts';
 import { FactoryDatabase } from '#/infrastructure/database/index.ts';
 

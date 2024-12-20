@@ -109,7 +109,7 @@ export default [
             'default-param-last': 'error',
             'max-classes-per-file': ['error', 1],
             'max-depth': ['error', 4],
-            'new-cap': 'error',
+            'new-cap': 'off',
             'no-else-return': 'error',
             'no-empty-function': 'error',
             'no-invalid-this': 'error',

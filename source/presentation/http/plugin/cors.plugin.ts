@@ -1,6 +1,6 @@
 import cors from '@fastify/cors';
+import type { FastifyInstance } from 'fastify/types/instance.js';
 
-import type { FastifyInstance } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { Plugin } from '#/common/type/data/presentation/http/plugin.data.ts';
 
 /**
@@ -51,7 +51,7 @@ export class CorsPlugin implements Plugin {
     public async configure(app: FastifyInstance): Promise<void> {
         await app.register(cors, {
             origin: this._options?.origins ?? '*',
-            methods: this._options?.methods ?? ['GET', 'POST', 'PUT', 'DELETE'],
+            methods: this._options?.methods ?? ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
             credentials: this._options?.credentials ?? false
         });
     }

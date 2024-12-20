@@ -1,6 +1,7 @@
 import scalar from '@scalar/fastify-api-reference';
+import type { FastifyInstance } from 'fastify/types/instance.js';
+import type { FastifyPluginCallback } from 'fastify/types/plugin.js';
 
-import type { FastifyInstance, FastifyPluginCallback } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { Plugin } from '#/common/type/data/presentation/http/plugin.data.ts';
 
 /**

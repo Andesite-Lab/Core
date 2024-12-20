@@ -1,6 +1,8 @@
 import type { BasaltLogger } from '@basalt-lab/basalt-logger';
+import type { FastifyInstance } from 'fastify/types/instance.js';
+import type { FastifyReply } from 'fastify/types/reply.js';
+import type { FastifyRequest } from 'fastify/types/request.js';
 
-import type { FastifyInstance, FastifyReply, FastifyRequest } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { Hook } from '#/common/type/data/presentation/http/hook.data.ts';
 
 /**

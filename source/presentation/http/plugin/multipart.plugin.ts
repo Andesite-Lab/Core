@@ -1,6 +1,6 @@
 import fastifyMultipart from '@fastify/multipart';
+import type { FastifyInstance } from 'fastify/types/instance.js';
 
-import type { FastifyInstance } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { Plugin } from '#/common/type/data/presentation/http/plugin.data.ts';
 
 /**

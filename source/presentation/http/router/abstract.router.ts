@@ -1,4 +1,6 @@
-import type { FastifyInstance, FastifyPluginAsync } from '#/common/lib/required/fastify/fastify.lib.ts';
+import type { FastifyInstance } from 'fastify/types/instance.js';
+import type { FastifyPluginAsync } from 'fastify/types/plugin.js';
+import path from 'path';
 
 /**
  * AbstractRouter class is responsible for defining the structure of the routers.
@@ -25,10 +27,9 @@ export abstract class AbstractRouter {
      * @param baseUrl - The base URL of the router.
      */
     public async configure(app: FastifyInstance, baseUrl: string): Promise<void> {
-        let sanitizedBaseUrl = baseUrl.replace(/\/{2,}/g, '/');
-        sanitizedBaseUrl = sanitizedBaseUrl.startsWith('/') ? sanitizedBaseUrl : `/${sanitizedBaseUrl}`;
+        const sanitizedBaseUrl = path.posix.join('/', this._routerPrefix, baseUrl);
         await app.register(this._router, {
-            prefix: `${sanitizedBaseUrl}${this._routerPrefix}`
+            prefix: sanitizedBaseUrl
         });
     }
 

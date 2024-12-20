@@ -1,6 +1,7 @@
 import fastifySwagger, { type SwaggerOptions } from '@fastify/swagger';
+import type { FastifyInstance } from 'fastify/types/instance.js';
+import type { FastifyRegisterOptions } from 'fastify/types/register.js';
 
-import type { FastifyInstance, FastifyRegisterOptions } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { Plugin } from '#/common/type/data/presentation/http/plugin.data.ts';
 
 /**

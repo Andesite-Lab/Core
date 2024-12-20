@@ -1,8 +1,8 @@
 import formBody from '@fastify/formbody';
 import { parse } from 'fast-querystring';
 
-import type { FastifyInstance } from '#/common/lib/required/fastify/fastify.lib.ts';
 import type { Plugin } from '#/common/type/data/presentation/http/plugin.data.ts';
+import type { FastifyInstance } from 'fastify/types/instance.js';
 
 /**
  * The options for the FormBody.

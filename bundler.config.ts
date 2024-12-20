@@ -10,12 +10,6 @@ await Bun.build({
     entrypoints: [
         './source/index.ts',
         './source/common/error/index.ts',
-        './source/common/lib/optional/ioredis/index.ts',
-        './source/common/lib/optional/knex/index.ts',
-        './source/common/lib/optional/vine/index.ts',
-        './source/common/lib/required/fastify/index.ts',
-        './source/common/lib/required/fluent-json-schema/index.ts',
-        './source/common/lib/required/i18n/index.ts',
         './source/common/type/data/index.ts',
         './source/common/util/index.ts',
 

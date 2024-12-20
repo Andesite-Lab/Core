@@ -4,6 +4,7 @@
 export const ErrorKeys = {
     I18N_NOT_INITIALIZED: 'error.core-api.i18n_not_initialized',
     I18N_ALREADY_INITIALIZED: 'error.core-api.i18n_already_initialized',
+
     INVALID_ENVIRONMENT: 'error.core-api.invalid_environment',
 
     DATABASE_NOT_CONNECTED: 'error.core-api.database_not_connected',
@@ -41,6 +42,7 @@ export const ErrorKeys = {
      * - name : The name of the store
      */
     STORE_NOT_REGISTERED: 'error.core-api.store_not_registered',
+
     INTERNAL_SERVER_ERROR: 'error.core-api.internal_server_error',
 
     DATABASE_NOT_SPECIFIED_IN_HEADER: 'error.core-api.database_not_specified_in_header',
@@ -206,6 +208,7 @@ export const ErrorKeys = {
      * - error : The error message
      */
     DATABASE_PERMISSION_DENIED: 'error.core-api.database_permission_denied',
+
     /**
      * Interpolation :
      * - name : The name of the storage
@@ -273,6 +276,17 @@ export const ErrorKeys = {
      * - containerName : The name of the container
      */
     AZ_STORAGE_CONTAINER_LIST_FAILED: 'error.core-api.azure_storage_container_list_failed',
+
+    /**
+     * Interpolation :
+     * - name : The name of the schema
+     */
+    SCHEMA_ALREADY_REGISTERED: 'error.core-api.schema_already_registered',
+    /**
+     * Interpolation :
+     * - name : The name of the schema
+     */
+    SCHEMA_NOT_REGISTERED: 'error.core-api.schema_not_registered',
 
     CRUD_DELETE_NO_SEARCH: 'error.core-api.crud_delete_no_search',
     CRUD_UPDATE_NO_SEARCH: 'error.core-api.crud_update_no_search'
