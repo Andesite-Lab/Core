@@ -139,7 +139,7 @@
     "@fastify/helmet": "^13.0.0",
     "@fastify/multipart": "^9.0.1",
     "@fastify/swagger": "^9.4.0",
-    "@scalar/fastify-api-reference": "^1.25.93",
+    "@scalar/fastify-api-reference": "^1.25.96",
     "@vinejs/vine": "^3.0.0",
     "ajv-errors": "^3.0.0",
     "ajv-formats": "^3.0.1",
