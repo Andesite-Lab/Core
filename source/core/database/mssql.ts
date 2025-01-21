@@ -326,10 +326,11 @@ export class MSSQL extends EventEmitter {
      * Retrieves a table by name.
      *
      * @param tableName - The name of the table to retrieve.
-     * @returns The table object for the specified table.
      *
      * @throws ({@link CoreError}) Thrown if the database is not connected. ({@link DATABASE_KEY_ERROR.MSSQL_NOT_CONNECTED})
      * @throws ({@link CoreError}) Thrown if the specified table is not found. ({@link DATABASE_KEY_ERROR.MSSQL_TABLE_NOT_FOUND})
+     *
+     * @returns The table object for the specified table.
      */
     public table(tableName: string): Table {
         if (!this._isConnected)

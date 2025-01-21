@@ -14,6 +14,9 @@ export * from './core/repository/repository';
 // Exports of error classes
 export * from './error/coreError';
 export * from './error/key/configKeyError';
+export * from './error/key/databaseKeyError';
+export * from './error/key/storageKeyError';
+export * from './error/key/utilKeyError';
 
 // Exports of i18n translation files
 import arLocale from './i18n/ar.json' with { type: 'json' };
